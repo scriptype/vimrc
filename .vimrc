@@ -48,6 +48,12 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_section_y = ''
 
+
+let g:NumberToggleTrigger="<C-l>"
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <cr> :noh<CR><CR>:<backspace>
 nnoremap <space> zz
