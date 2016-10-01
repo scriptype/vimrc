@@ -48,7 +48,6 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_section_y = ''
 
-
 let g:NumberToggleTrigger="<C-l>"
 
 let g:ctrlp_map = '<c-p>'
@@ -73,3 +72,57 @@ function! XTermPasteBegin()
 endfunction
 
 execute pathogen#infect()
+
+iab rreact 
+\<CR>var React = require('react')
+\<CR>
+\<CR>var MyComponent = React.createClass({
+\<CR>  propTypes: { },
+\<CR>
+\<CR>  getInitialState() {
+\<CR>  return {}
+\<CR>},
+\<CR>
+\<CR>  componentWillMount() { },
+\<CR>  componentDidMount() { },
+\<CR>  componentWillReceiveProps(nextProps) { },
+\<CR>  shouldComponentUpdate(nextProps, nextState) { },
+\<CR>  componentWillUpdate(nextProps, nextState) { },
+\<CR>  componentDidUpdate(prevProps, prevState) { },
+\<CR>  componentWillUnmount() { },
+\<CR>
+\<CR>  render() {
+\<CR>  return (
+\<CR><div>My Component</div>
+\<CR>)
+\<CR>}
+\<CR>})
+\<CR>
+\<CR>module.exports = MyComponent
+
+iab ireact 
+\<CR>import React from 'react'
+\<CR>
+\<CR>var MyComponent = React.createClass({
+\<CR>  propTypes: { },
+\<CR>
+\<CR>  getInitialState() {
+\<CR>  return {}
+\<CR>},
+\<CR>
+\<CR>  componentWillMount() { },
+\<CR>  componentDidMount() { },
+\<CR>  componentWillReceiveProps(nextProps) { },
+\<CR>  shouldComponentUpdate(nextProps, nextState) { },
+\<CR>  componentWillUpdate(nextProps, nextState) { },
+\<CR>  componentDidUpdate(prevProps, prevState) { },
+\<CR>  componentWillUnmount() { },
+\<CR>
+\<CR>  render() {
+\<CR>  return (
+\<CR><div>My Component</div>
+\<CR>)
+\<CR>}
+\<CR>})
+\<CR>
+\<CR>export default MyComponent
