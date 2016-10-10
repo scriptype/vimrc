@@ -24,6 +24,7 @@ set expandtab
 set nocindent
 set nosmartindent
 set autoindent
+set undofile
 
 set backspace=indent,eol,start
 
