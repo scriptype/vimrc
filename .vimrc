@@ -27,6 +27,7 @@ set autoindent
 set undofile
 
 set backspace=indent,eol,start
+let mapleader = ","
 
 set colorcolumn=81
 set number
