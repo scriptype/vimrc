@@ -57,6 +57,7 @@ let g:ctrlp_cmd = 'CtrlP'
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <cr> :noh<CR><CR>:<backspace>
 nnoremap <space> zz
+nnoremap <C-h> :GundoToggle<CR>
 
 " Keep the cursor in the same place after yank
 vmap y ygv<Esc>
