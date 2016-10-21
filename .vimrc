@@ -30,7 +30,7 @@ set backspace=indent,eol,start
 let mapleader = ","
 
 set colorcolumn=81
-set number
+set relativenumber
 set ruler
 set hlsearch
 
@@ -43,6 +43,17 @@ set directory=~/.vim/swp
 set autoread
 
 set laststatus=2
+
+set winheight=30
+set winminheight=5
+
+nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
@@ -58,7 +69,7 @@ let g:ctrlp_cmd = 'CtrlP'
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <cr> :noh<CR><CR>:<backspace>
 nnoremap <space> zz
-nnoremap <C-h> :GundoToggle<CR>
+nnoremap <C-g> :GundoToggle<CR>
 
 " Keep the cursor in the same place after yank
 vmap y ygv<Esc>
