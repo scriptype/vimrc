@@ -28,6 +28,8 @@ set undofile
 
 set backspace=indent,eol,start
 let mapleader = ","
+nnoremap ; :
+nnoremap : ;
 
 set colorcolumn=81
 set relativenumber
