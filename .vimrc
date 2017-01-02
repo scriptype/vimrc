@@ -65,6 +65,7 @@ let g:NumberToggleTrigger="<Leader>l"
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <cr> :noh<CR><CR>:<backspace>
@@ -140,3 +141,16 @@ iab ireact
 \<CR>})
 \<CR>
 \<CR>export default MyComponent
+
+iab html5 
+\<CR><!DOCTYPE html>
+\<CR><html lang="en">
+\<CR><head>
+\<CR>  <meta charset="utf-8" />
+\<CR><title>HTML5 Template</title>
+\<CR><meta name="viewport" content="width=device-width, initial-scale=1.0">
+\<CR><link rel="stylesheet" href="style.css" />
+\<CR></head>
+\<CR><body>
+\<CR></body>
+\<CR></html>
