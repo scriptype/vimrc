@@ -25,6 +25,7 @@ set nocindent
 set nosmartindent
 set autoindent
 set undofile
+set undodir=~/.vim/undo
 
 set backspace=indent,eol,start
 let mapleader = ","
