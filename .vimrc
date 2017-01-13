@@ -25,7 +25,6 @@ set undofile
 set undodir=~/.vim/undo
 
 set backspace=indent,eol,start
-let mapleader = ","
 
 set colorcolumn=81
 set relativenumber
@@ -45,6 +44,8 @@ set laststatus=2
 
 set winheight=30
 set winminheight=5
+
+let mapleader = ","
 
 nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
