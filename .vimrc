@@ -159,3 +159,11 @@ iab html5
 \<CR></body>
 \<CR>
 \<CR><BS></html>
+
+iab ** 
+\/**
+\<CR>Description.
+\<CR>@param {Object\|String} name - desc
+\<CR>@param {Boolean} [name] - desc
+\<CR>@returns {Number}
+\<CR>*/
