@@ -2,9 +2,6 @@ if &t_Co > 1
    syntax enable
 endif
 
-"colorscheme delek
-"hi clear Directory
-"hi Directory term=bold ctermfg=Blue guifg=Blue
 colorscheme molokai
 
 if has("autocmd")
