@@ -7,4 +7,4 @@ curl https://raw.githubusercontent.com/scriptype/vimrc/master/setup.sh | sh
 ```
 
 ## Manual Steps
-- Set terminals non-ascii font to Source Code Pro for Powerline (12pt)
+- Set your terminal's non-ascii font to Source Code Pro for Powerline (12pt)
