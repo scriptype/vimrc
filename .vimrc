@@ -90,26 +90,26 @@ endfunction
 execute pathogen#infect()
 
 iab rreact 
-\<CR>var React = require('react')
+\var React = require('react')
 \<CR>
 \<CR>var MyComponent = React.createClass({
-\<CR>  propTypes: { },
+\<CR>propTypes: { },
 \<CR>
-\<CR>  getInitialState() {
-\<CR>  return {}
+\<CR><TAB>getInitialState() {
+\<CR><TAB>return {}
 \<CR>},
 \<CR>
-\<CR>  componentWillMount() { },
-\<CR>  componentDidMount() { },
-\<CR>  componentWillReceiveProps(nextProps) { },
-\<CR>  shouldComponentUpdate(nextProps, nextState) { },
-\<CR>  componentWillUpdate(nextProps, nextState) { },
-\<CR>  componentDidUpdate(prevProps, prevState) { },
-\<CR>  componentWillUnmount() { },
+\<CR><TAB>componentWillMount() { },
+\<CR><TAB>componentDidMount() { },
+\<CR><TAB>componentWillReceiveProps(nextProps) { },
+\<CR><TAB>shouldComponentUpdate(nextProps, nextState) { },
+\<CR><TAB>componentWillUpdate(nextProps, nextState) { },
+\<CR><TAB>componentDidUpdate(prevProps, prevState) { },
+\<CR><TAB>componentWillUnmount() { },
 \<CR>
-\<CR>  render() {
-\<CR>  return (
-\<CR><div>My Component</div>
+\<CR><TAB>render() {
+\<CR><TAB>return (
+\<CR><TAB><div>My Component</div>
 \<CR>)
 \<CR>}
 \<CR>})
@@ -117,26 +117,26 @@ iab rreact
 \<CR>module.exports = MyComponent
 
 iab ireact 
-\<CR>import React from 'react'
+\import React from 'react'
 \<CR>
 \<CR>var MyComponent = React.createClass({
-\<CR>  propTypes: { },
+\<CR>propTypes: { },
 \<CR>
-\<CR>  getInitialState() {
-\<CR>  return {}
+\<CR><TAB>getInitialState() {
+\<CR><TAB>return {}
 \<CR>},
 \<CR>
-\<CR>  componentWillMount() { },
-\<CR>  componentDidMount() { },
-\<CR>  componentWillReceiveProps(nextProps) { },
-\<CR>  shouldComponentUpdate(nextProps, nextState) { },
-\<CR>  componentWillUpdate(nextProps, nextState) { },
-\<CR>  componentDidUpdate(prevProps, prevState) { },
-\<CR>  componentWillUnmount() { },
+\<CR><TAB>componentWillMount() { },
+\<CR><TAB>componentDidMount() { },
+\<CR><TAB>componentWillReceiveProps(nextProps) { },
+\<CR><TAB>shouldComponentUpdate(nextProps, nextState) { },
+\<CR><TAB>componentWillUpdate(nextProps, nextState) { },
+\<CR><TAB>componentDidUpdate(prevProps, prevState) { },
+\<CR><TAB>componentWillUnmount() { },
 \<CR>
-\<CR>  render() {
-\<CR>  return (
-\<CR><div>My Component</div>
+\<CR><TAB>render() {
+\<CR><TAB>return (
+\<CR><TAB><div>My Component</div>
 \<CR>)
 \<CR>}
 \<CR>})
@@ -144,14 +144,18 @@ iab ireact
 \<CR>export default MyComponent
 
 iab html5 
-\<CR><!DOCTYPE html>
-\<CR><html lang="en">
+\<!DOCTYPE html>
+\<CR><BS><html lang="en">
 \<CR><head>
-\<CR>  <meta charset="utf-8" />
-\<CR><title>HTML5 Template</title>
-\<CR><meta name="viewport" content="width=device-width, initial-scale=1.0">
-\<CR><link rel="stylesheet" href="style.css" />
+\<CR><TAB><meta charset="utf-8" />
+\<CR><TAB><title>HTML5 Template</title>
+\<CR><TAB><meta name="viewport" content="width=device-width, initial-scale=1.0">
+\<CR><TAB><link rel="stylesheet" href="style.css" />
 \<CR></head>
+\<CR>
 \<CR><body>
+\<CR><TAB><div id="app"></div>
+\<CR><TAB><script type="text/javascript" src="app.js"></script>
 \<CR></body>
-\<CR></html>
+\<CR>
+\<CR><BS></html>
