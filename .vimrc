@@ -14,6 +14,13 @@ if has("autocmd")
     autocmd Filetype less setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 endif
 
+hi htmlArg gui=italic
+hi Comment gui=italic
+hi Type    gui=italic
+hi htmlArg cterm=italic
+hi Comment cterm=italic
+hi Type    cterm=italic
+
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
