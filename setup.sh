@@ -10,12 +10,16 @@ mkdir ~/.vim/undo
 
 git clone https://github.com/scriptype/vimrc ~/vimrc
 ln -s ~/vimrc/.vimrc ~/.vimrc
+ln -s ~/vimrc/.ctrlpignore ~/.ctrlpignore
 
+brew install ack
+
+git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+git clone http://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
+git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
 cd ~/.vim/bundle/ && git clone https://github.com/Raimondi/delimitMate.git
 cd ~/.vim/bundle/ && git clone https://github.com/airblade/vim-gitgutter.git
 cd ~/.vim/bundle/ && git clone https://github.com/scrooloose/nerdtree.git
-git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
-git clone http://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
 cd ~/.vim/bundle/ && git clone https://github.com/kien/ctrlp.vim.git
 cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdcommenter.git
 cd ~/.vim/bundle && git clone https://github.com/ervandew/supertab.git

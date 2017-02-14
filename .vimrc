@@ -38,6 +38,11 @@ set relativenumber
 set number
 set ruler
 set hlsearch
+set incsearch
+set ignorecase
+set cursorline
+set wildmenu
+set lazyredraw
 
 set splitright
 set splitbelow
@@ -52,6 +57,8 @@ set laststatus=2
 set winheight=30
 set winminheight=5
 
+set updatetime=250
+
 let mapleader = ","
 
 nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
@@ -63,6 +70,11 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 nnoremap <leader>r :source $MYVIMRC<CR>
+nnoremap <leader>er :sp $MYVIMRC<CR>
+nnoremap <leader>ver :vsp $MYVIMRC<CR>
+nnoremap <leader>s :mksession!<CR> " Then, start vim with "vim -S" to recover the session
+nnoremap <leader>a :Ack 
+nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
@@ -72,9 +84,13 @@ let g:airline_section_y = ''
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_user_command = 'find %s -type f | grep -v "`cat ~/.ctrlpignore`"'
 
-let g:syntastic_javascript_checkers = ['jshint']
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+
+let g:syntastic_javascript_checkers = ['eslint', 'jshint']
 
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <cr> :noh<CR><CR>:<backspace>
