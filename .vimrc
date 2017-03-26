@@ -171,18 +171,18 @@ iab ireact
 
 iab html5 
 \<!DOCTYPE html>
-\<CR><BS><html lang="en">
+\<CR><html lang="en">
 \<CR><head>
-\<CR><TAB><meta charset="utf-8" />
-\<CR><TAB><title>HTML5 Template</title>
-\<CR><TAB><meta name="viewport" content="width=device-width, initial-scale=1.0">
-\<CR><TAB><link rel="stylesheet" href="style.css" />
-\<CR></head>
+\<CR><meta charset="utf-8" />
+\<CR><title>HTML5 Template</title>
+\<CR><meta name="viewport" content="width=device-width, initial-scale=1.0">
+\<CR><link rel="stylesheet" href="style.css" />
+\<CR><BS></head>
 \<CR>
 \<CR><body>
-\<CR><TAB><div id="app"></div>
-\<CR><TAB><script type="text/javascript" src="app.js"></script>
-\<CR></body>
+\<CR><div id="app"></div>
+\<CR><script type="text/javascript" src="app.js"></script>
+\<CR><BS></body>
 \<CR>
 \<CR><BS></html>
 
