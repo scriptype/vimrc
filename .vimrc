@@ -78,6 +78,8 @@ nnoremap <leader>s :mksession!<CR> " Then, start vim with "vim -S" to recover th
 nnoremap <leader>a :Ack 
 nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
 
+let g:NERDTreeIgnore=['node_modules']
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
@@ -92,7 +94,7 @@ let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 
-let g:syntastic_javascript_checkers = ['eslint', 'jshint']
+let g:syntastic_javascript_checkers = ['eslint']
 
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <cr> :noh<CR><CR>:<backspace>
