@@ -70,11 +70,11 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 nnoremap <leader>yf gg"+yG<c-o><c-o>
+nnoremap <leader>s ms"syiw:r !say <C-r>s<CR>`s
 
 nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>er :sp $MYVIMRC<CR>
 nnoremap <leader>ver :vsp $MYVIMRC<CR>
-nnoremap <leader>s :mksession!<CR> " Then, start vim with "vim -S" to recover the session
 nnoremap <leader>a :Ack 
 nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
 
