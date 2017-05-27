@@ -70,6 +70,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 nnoremap <leader>yf gg"+yG<c-o><c-o>
+nnoremap <silent> <leader>d ms"syy:r !say -v Fred "<C-r>s"<CR>`s
 nnoremap <silent> <leader>s :<C-u>call system('say ' . expand('<cword>'))<CR>
 
 nnoremap <leader>r :source $MYVIMRC<CR>
