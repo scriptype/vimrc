@@ -100,7 +100,9 @@ let g:syntastic_javascript_checkers = ['eslint']
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <cr> :noh<CR><CR>:<backspace>
 nnoremap <space> zz
-nnoremap <C-g> :GundoToggle<CR>
+nnoremap <leader>g :GundoToggle<CR>
+nnoremap <leader>f :GitGutterStageHunk<CR>
+nnoremap <leader>n :GitGutterNextHunk<CR>
 
 " Keep the cursor in the same place after yank
 vmap y ygv<Esc>
@@ -189,7 +191,7 @@ iab html5
 \<CR>
 \<CR><BS></html>
 
-iab ** 
+iab *jsdoc* 
 \/**
 \<CR>Description.
 \<CR>@param {Object\|String} name - desc
