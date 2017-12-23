@@ -33,6 +33,7 @@ set undodir=~/.vim/undo
 
 set backspace=indent,eol,start
 
+" set mouse=a
 set colorcolumn=81
 set relativenumber
 set number
