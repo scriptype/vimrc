@@ -28,6 +28,6 @@ cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdcommenter.git
 cd ~/.vim/bundle && git clone https://github.com/ervandew/supertab.git
 cd ~/.vim/bundle && git clone https://github.com/tpope/vim-fugitive.git
 cd ~/.vim/bundle && git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
-vim -u NONE -c "helptags vim-fugitive/doc" -c q
 git clone https://github.com/powerline/fonts.git ~/power-fonts
 cd ~/power-fonts && sh install.sh
+vim -u NONE -c "helptags vim-fugitive/doc" -c q
