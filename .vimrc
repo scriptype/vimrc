@@ -79,6 +79,7 @@ nnoremap <leader>er :sp $MYVIMRC<CR>
 nnoremap <leader>ver :vsp $MYVIMRC<CR>
 nnoremap <leader>a :Ack 
 nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
+nmap <Leader>w :%s/\s\+$//gic<CR>
 
 let g:NERDTreeIgnore=['node_modules']
 
