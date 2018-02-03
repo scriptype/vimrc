@@ -1,3 +1,5 @@
+read -p "Type full path for vimrc installation (e.g. ~/vimrc)" vimrcpath
+
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -8,9 +10,9 @@ mkdir ~/.vim/backup
 mkdir ~/.vim/swp
 mkdir ~/.vim/undo
 
-git clone https://github.com/scriptype/vimrc ~/vimrc
-ln -s ~/vimrc/.vimrc ~/.vimrc
-ln -s ~/vimrc/.ctrlpignore ~/.ctrlpignore
+git clone https://github.com/scriptype/vimrc $(vimrcpath)
+ln -s $(vimrcpath)/.vimrc ~/.vimrc
+ln -s $(vimrcpath)/.ctrlpignore ~/.ctrlpignore
 
 brew install ack
 
