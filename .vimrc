@@ -100,7 +100,7 @@ let g:ctrlp_working_path_mode = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
 map <silent> <C-n> :NERDTreeToggle<CR>
-nnoremap <Esc> :noh<CR>:<backspace>
+nnoremap <backspace> :noh<CR>:<backspace>
 nnoremap <space> zz
 nnoremap <leader>g :GundoToggle<CR>
 nnoremap <leader>f :GitGutterStageHunk<CR>
