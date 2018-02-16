@@ -99,6 +99,7 @@ let g:ctrlp_working_path_mode = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+let g:vue_disable_pre_processors = 1
 
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <backspace> :noh<CR>:<backspace>
