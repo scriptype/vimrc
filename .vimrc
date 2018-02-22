@@ -99,7 +99,7 @@ let g:ctrlp_working_path_mode = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exe = 'npm run lint --'
-let g:vue_disable_pre_processors = 1
+" let g:vue_disable_pre_processors = 1
 
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <backspace> :noh<CR>:<backspace>
@@ -108,7 +108,7 @@ nnoremap <leader>g :GundoToggle<CR>
 nnoremap <leader>f :GitGutterStageHunk<CR>
 nnoremap <leader>n :GitGutterNextHunk<CR>
 
-autocmd Filetype vue nnoremap <leader>h /template<CR>vit:RegionSyntax pug<CR>:noh<cr>:<backspace>
+" autocmd Filetype vue nnoremap <leader>h /template<CR>vit:RegionSyntax pug<CR>:noh<cr>:<backspace>
 
 " Keep the cursor in the same place after yank
 vmap y ygv<Esc>
