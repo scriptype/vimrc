@@ -107,8 +107,7 @@ nnoremap <space> zz
 nnoremap <leader>g :GundoToggle<CR>
 nnoremap <leader>f :GitGutterStageHunk<CR>
 nnoremap <leader>n :GitGutterNextHunk<CR>
-
-" autocmd Filetype vue nnoremap <leader>h /template<CR>vit:RegionSyntax pug<CR>:noh<cr>:<backspace>
+nnoremap <leader>h :syntax sync fromstart<CR>
 
 " Keep the cursor in the same place after yank
 vmap y ygv<Esc>
