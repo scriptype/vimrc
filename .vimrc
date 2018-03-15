@@ -14,6 +14,10 @@ if has("autocmd")
     autocmd Filetype less setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 endif
 
+if has('python3')
+    let g:gundo_prefer_python3 = 1
+endif
+
 hi htmlArg gui=italic
 hi Comment gui=italic
 hi Type    gui=italic
