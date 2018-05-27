@@ -19,7 +19,6 @@ brew install ack
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 git clone http://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
 git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
-git clone git://github.com/craigemery/vim-autotag.git ~/.vim/bundle/vim-autotag
 pip install Pillow
 cd ~/.vim/bundle && git clone https://github.com/posva/vim-vue.git
 cd ~/.vim/bundle/ && git clone https://github.com/Raimondi/delimitMate.git
