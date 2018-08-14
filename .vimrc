@@ -82,6 +82,7 @@ nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>er :sp $MYVIMRC<CR>
 nnoremap <leader>ver :vsp $MYVIMRC<CR>
 nnoremap <leader>a :Ack 
+nnoremap <Leader>d :FindDefinition<CR>
 nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
 nmap <Leader>w :%s/\s\+$//gic<CR>
 
@@ -190,6 +191,7 @@ iab html5
 \<CR><meta charset="utf-8" />
 \<CR><title>HTML5 Template</title>
 \<CR><meta name="viewport" content="width=device-width, initial-scale=1.0">
+\<CR><link rel="icon" type="image/png" href="favicon.png" />
 \<CR><link rel="stylesheet" href="style.css" />
 \<CR><BS></head>
 \<CR>
