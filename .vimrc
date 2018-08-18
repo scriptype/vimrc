@@ -81,7 +81,7 @@ nnoremap <silent> <leader>s :<C-u>call system('say ' . expand('<cword>'))<CR>
 nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>er :sp $MYVIMRC<CR>
 nnoremap <leader>ver :vsp $MYVIMRC<CR>
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ack! 
 nnoremap <Leader>d :FindDefinition<CR>
 nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
 nmap <Leader>w :%s/\s\+$//gic<CR>
