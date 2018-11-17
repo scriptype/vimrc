@@ -64,6 +64,11 @@ set winminheight=5
 
 set updatetime=250
 
+set foldmethod=syntax
+set foldcolumn=1
+let javaScript_fold=1
+set foldlevelstart=99
+
 let mapleader = ","
 
 nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
@@ -102,6 +107,7 @@ let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 
+let g:user_emmet_leader_key=','
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 " let g:vue_disable_pre_processors = 1
