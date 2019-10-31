@@ -113,6 +113,7 @@ let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 " let g:vue_disable_pre_processors = 1
 
 map <silent> <C-n> :NERDTreeToggle<CR>
+map <silent> <C-n> <plug>NERDTreeTabsToggle<CR>
 nnoremap <backspace> :noh<CR>:<backspace>
 nnoremap <space> zz
 nnoremap <leader>g :GundoToggle<CR>
