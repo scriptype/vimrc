@@ -73,6 +73,8 @@ let mapleader = ","
 
 nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <C-w>> - 10<C-w>>
+nnoremap <C-w>< - 10<C-w><
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
