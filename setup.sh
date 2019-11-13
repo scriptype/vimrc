@@ -16,6 +16,17 @@ ln -s $(vimrcpath)/.ctrlpignore ~/.ctrlpignore
 
 brew install ack
 
+# Install and compile procvim.vim
+git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim
+pushd ~/.vim/bundle/vimproc.vim
+make
+popd
+# Install tsuquyomi
+git clone https://github.com/Quramy/tsuquyomi.git ~/.vim/bundle/tsuquyomi
+
+git clone https://github.com/peitalin/vim-jsx-typescript.git ~/.vim/bundle/vim-jsx-typescript
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim
+
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 git clone http://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
 git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim

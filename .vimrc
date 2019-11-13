@@ -12,6 +12,7 @@ if has("autocmd")
     autocmd Filetype css setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
     autocmd Filetype scss setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
     autocmd Filetype less setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+    autocmd FileType typescript nmap <buffer> <Leader>h : <C-u>echo tsuquyomi#hint()<CR>
 endif
 
 if has('python3')
@@ -110,8 +111,10 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 
 let g:user_emmet_leader_key=','
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 " let g:vue_disable_pre_processors = 1
 
 map <silent> <C-n> :NERDTreeToggle<CR>
