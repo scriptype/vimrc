@@ -87,11 +87,12 @@ nnoremap <leader>yf gg"+yG<c-o><c-o>
 nnoremap <silent> <leader>d ms"syy:r !say -v Fred "<C-r>s"<CR>`s
 nnoremap <silent> <leader>s :<C-u>call system('say ' . expand('<cword>'))<CR>
 
-nnoremap <leader>r :source $MYVIMRC<CR>
+nnoremap <leader>s :source $MYVIMRC<CR>
 nnoremap <leader>er :sp $MYVIMRC<CR>
-nnoremap <leader>ver :vsp $MYVIMRC<CR>
+nnoremap <leader>ser :vsp $MYVIMRC<CR>
 nnoremap <leader>a :Ack! 
-nnoremap <Leader>d :FindDefinition<CR>
+nnoremap <Leader>d :ALEGoToDefinition<CR>
+nnoremap <Leader>r :ALEFindReferences<CR>
 nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
 nmap <Leader>w :%s/\s\+$//gic<CR>
 
@@ -113,6 +114,20 @@ let g:ctrlp_working_path_mode = 0
 
 let g:user_emmet_leader_key=','
 let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+let g:syntastic_check_on_open = 0
+
+" Fix files with prettier, and then ESLint.
+let g:ale_fixers = {
+      \'*': ['remove_trailing_lines'],
+      \'javascript': ['prettier', 'eslint'],
+      \'typescript': ['prettier', 'eslint'],
+      \'typescript.tsx': ['prettier', 'eslint']
+\}
+
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
+
 " let g:vue_disable_pre_processors = 1
 
 map <silent> <C-n> :NERDTreeToggle<CR>
@@ -122,7 +137,6 @@ nnoremap <space> zz
 nnoremap <leader>g :GundoToggle<CR>
 nnoremap <leader>f :GitGutterStageHunk<CR>
 nnoremap <leader>n :GitGutterNextHunk<CR>
-nnoremap <leader>h :syntax sync fromstart<CR>
 
 " Keep the cursor in the same place after yank
 vmap y ygv<Esc>
