@@ -91,7 +91,8 @@ nnoremap <leader>s :source $MYVIMRC<CR>
 nnoremap <leader>er :sp $MYVIMRC<CR>
 nnoremap <leader>ser :vsp $MYVIMRC<CR>
 nnoremap <leader>a :Ack! 
-nnoremap <Leader>d :ALEGoToDefinition<CR>
+nnoremap <Leader>d :ALEGoToDefinitionInTab<CR>
+nnoremap <Leader>vd :ALEGoToDefinitionInVSplit<CR>
 nnoremap <Leader>r :ALEFindReferences<CR>
 nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
 nmap <Leader>w :%s/\s\+$//gic<CR>
