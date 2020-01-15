@@ -94,6 +94,7 @@ nnoremap <leader>a :Ack!
 nnoremap <Leader>d :ALEGoToDefinitionInTab<CR>
 nnoremap <Leader>vd :ALEGoToDefinitionInVSplit<CR>
 nnoremap <Leader>r :ALEFindReferences<CR>
+nnoremap <Leader>e :ALENext<CR>
 nmap <Leader>t :Ack \(TODO\\|FIXME\)<CR>
 nmap <Leader>w :%s/\s\+$//gic<CR>
 
