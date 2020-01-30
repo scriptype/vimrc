@@ -219,8 +219,8 @@ iab html5
 \<CR><html lang="en">
 \<CR><head>
 \<CR><meta charset="utf-8" />
-\<CR><title>HTML5 Template</title>
 \<CR><meta name="viewport" content="width=device-width, initial-scale=1.0">
+\<CR><title>HTML5 Template</title>
 \<CR><link rel="icon" type="image/png" href="favicon.png" />
 \<CR><link rel="stylesheet" href="style.css" />
 \<CR><BS></head>
