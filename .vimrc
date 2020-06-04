@@ -9,6 +9,7 @@ if has("autocmd")
 
     autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
     autocmd Filetype html setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+    autocmd Filetype hbs setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
     autocmd Filetype css setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
     autocmd Filetype scss setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
     autocmd Filetype less setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
