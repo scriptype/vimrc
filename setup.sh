@@ -42,6 +42,7 @@ cd ~/.vim/bundle && git clone https://github.com/ervandew/supertab.git
 cd ~/.vim/bundle && git clone https://github.com/tpope/vim-fugitive.git
 cd ~/.vim/bundle && git clone https://github.com/dense-analysis/ale.git
 cd ~/.vim/bundle && git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+cd ~/.vim/bundle/ && git clone https://github.com/mustache/vim-mustache-handlebars.git
 git clone https://github.com/powerline/fonts.git ~/power-fonts
 cd ~/power-fonts && sh install.sh
 vim -u NONE -c "helptags vim-fugitive/doc" -c q
