@@ -140,6 +140,9 @@ let g:ale_sign_warning = '--'
 set omnifunc=ale#completion#OmniFunc
 set completeopt+=noinsert
 
+let b:ale_linters = ['eslint']
+let g:ale_javascript_eslint_executable = 'eslint_d --cache'
+
 " let g:vue_disable_pre_processors = 1
 
 map <silent> <C-n> :NERDTreeToggle<CR>
