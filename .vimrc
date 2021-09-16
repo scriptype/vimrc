@@ -4,6 +4,8 @@ endif
 
 colorscheme molokai
 
+au BufRead,BufNewFile *.scssm set filetype=scss.css
+
 if has("autocmd")
     filetype plugin indent on
 
