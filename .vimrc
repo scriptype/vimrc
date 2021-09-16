@@ -95,6 +95,7 @@ nnoremap <silent> <leader>s :<C-u>call system('say ' . expand('<cword>'))<CR>
 nnoremap <leader>s :source $MYVIMRC<CR>
 nnoremap <leader>er :sp $MYVIMRC<CR>
 nnoremap <leader>ser :vsp $MYVIMRC<CR>
+nnoremap <leader>ter :tabedit $MYVIMRC<CR>
 nnoremap <leader>a :Ack! 
 nnoremap <Leader>d :ALEGoToDefinitionInTab<CR>
 nnoremap <Leader>vd :ALEGoToDefinitionInVSplit<CR>
