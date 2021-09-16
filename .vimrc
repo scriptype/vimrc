@@ -17,6 +17,8 @@ if has("autocmd")
     autocmd Filetype less setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
     autocmd FileType typescript.tsx nmap <buffer> <Leader>h : <C-u>echo tsuquyomi#hint()<CR>
     autocmd FileType typescript nmap <buffer> <Leader>h : <C-u>echo tsuquyomi#hint()<CR>
+    autocmd FileType typescript nmap <buffer> <Leader>ver : <C-u>:TsuImport<CR>
+    autocmd FileType typescript setlocal completeopt+=menu,preview
 endif
 
 if has('python3')
