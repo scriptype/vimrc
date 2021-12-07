@@ -131,7 +131,8 @@ let g:ale_fixers = {
       \'*': ['remove_trailing_lines'],
       \'javascript': ['prettier', 'eslint'],
       \'typescript': ['prettier', 'eslint'],
-      \'typescript.tsx': ['prettier', 'eslint']
+      \'typescript.tsx': ['prettier', 'eslint'],
+      \'vue': ['prettier', 'eslint']
 \}
 
 " Set this variable to 1 to fix files when you save them.
