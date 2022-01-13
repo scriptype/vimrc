@@ -76,6 +76,7 @@ set foldmethod=syntax
 set foldcolumn=1
 let javaScript_fold=1
 set foldlevelstart=99
+set mmp=5000
 
 let mapleader = ","
 
